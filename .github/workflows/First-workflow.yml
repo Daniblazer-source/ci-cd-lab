@@ -11,4 +11,4 @@ jobs:
       - name: show current working directory
         run: pwd
       - name: Finished
-        run: echo "Workflow completed'
+        run: echo "Workflow completed"
