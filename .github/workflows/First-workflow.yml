@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Get repository files
         uses: actions/checkout@v4
+      - name: list all files including hidden files
+        run: ls -la
       - name: Print a message
         run: echo "Hello from GitHub Actions !"
       - name: show current working directory
