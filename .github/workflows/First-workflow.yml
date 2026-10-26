@@ -6,6 +6,8 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
+      - name: Get repository files
+        uses: action/checkout@4
       - name: Print a message
         run: echo "Hello from GitHub Actions !"
       - name: show current working directory
