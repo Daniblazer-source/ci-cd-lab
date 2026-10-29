@@ -8,5 +8,5 @@ def test_add_numbers():
 
 
 
-def test_app_environment()
+def test_app_environment():
   assert os.environ["APP_ENV"] == "testing"
