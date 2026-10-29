@@ -1,4 +1,5 @@
 from app import add_numbers
 
-def  test_add_numbers():
+
+def test_add_numbers():
   assert add_numbers(10, 7) == 17
