@@ -7,6 +7,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      APP_ENV: testing
     steps:
       - name: Get respository files
         uses: actions/checkout@v4
@@ -23,8 +25,6 @@ jobs:
         run: python -m ruff check .
         
       - name: Run tests
-        env:
-          APP_ENV: testing
         run: python -m pytest -v
       
         
