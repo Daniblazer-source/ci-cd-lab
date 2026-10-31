@@ -12,4 +12,4 @@ def test_app_environment():
   assert os.environ["APP_ENV"] == "testing"
 
 def test_demo_secret_exist():
-  assert os.environ.get("DEMO_SECRET") is not none 
+  assert os.environ.get("DEMO_SECRET") is not None 
