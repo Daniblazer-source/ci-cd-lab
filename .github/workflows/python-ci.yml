@@ -28,6 +28,6 @@ jobs:
       - name: Run tests
         env:
           DEMO_SECRET: ${{ secrets.DEMO_SECRET }}
-        run: python -m pytest -v
+        run: python -m pytest -v --junitxml=test-results.xml
       
         
