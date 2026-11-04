@@ -35,5 +35,13 @@ jobs:
         with:
           name: python-test-report
           path: test-results.xml
+
+  build:
+    runs-on: ubuntu-latest.
+    needs: test
+    steps:
+      - name: Build confirmation
+        run: echo "Test passed. Ready to build!"
+      
       
         
